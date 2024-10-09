@@ -30,6 +30,7 @@ func resourceOpsGenieService() *schema.Resource {
 				Type:         schema.TypeString,
 				Required:     true,
 				ValidateFunc: validateOpsGenieServiceTeamId,
+				ForceNew:     true,
 			},
 			"description": {
 				Type:         schema.TypeString,
